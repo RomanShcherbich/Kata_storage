@@ -60,18 +60,54 @@
     <Compile Include="Steps\Common\Kata_Steps.cs" />
     <Compile Include="Steps\Katas\Kata_Runner.cs" />
     <Compile Include="Steps\Katas\Solutions\Kata_Code.cs" />
+    <Compile Include="Tests\Dubstep.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dubstep.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\Kata_DescendingOrder.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Kata_DescendingOrder.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\Kata_Sum_of_all_the_multiples_of_3_or_5.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Kata_Sum_of_all_the_multiples_of_3_or_5.feature</DependentUpon>
+    </Compile>
     <Compile Include="Tests\The_Coupon_Code.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>The_Coupon_Code.feature</DependentUpon>
     </Compile>
+    <Compile Include="Tests\Write_Number_in_Expanded_Form.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Write_Number_in_Expanded_Form.feature</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Tests\Dubstep.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Dubstep.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Tests\Kata_DescendingOrder.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Kata_DescendingOrder.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Tests\Kata_Sum_of_all_the_multiples_of_3_or_5.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Kata_Sum_of_all_the_multiples_of_3_or_5.feature.cs</LastGenOutput>
+    </None>
     <None Include="Tests\The_Coupon_Code.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>The_Coupon_Code.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Tests\Write_Number_in_Expanded_Form.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Write_Number_in_Expanded_Form.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup />

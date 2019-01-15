@@ -12,6 +12,15 @@ namespace Kata_platform.Steps.Katas.Solutions
         private Logger Log = new Logger();
 
         /*Kata calculations*/
+        #region Validate_Credit_Card_Number
+        public string Validate_Credit_Card_Number(string Card_Number)
+        {
+            string result;
+            result = "0";
+            Log.Info("result = " + result);
+            return result;
+        }
+        #endregion
         #region Write_Number_in_Expanded_Form
         public string Write_Number_in_Expanded_Form_by_array(string num)
         {

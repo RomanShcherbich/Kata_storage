@@ -80,6 +80,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>The_Coupon_Code.feature</DependentUpon>
     </Compile>
+    <Compile Include="Tests\Validate_Credit_Card_Number.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Validate_Credit_Card_Number.feature</DependentUpon>
+    </Compile>
     <Compile Include="Tests\Write_Number_in_Expanded_Form.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -104,6 +109,10 @@
     <None Include="Tests\The_Coupon_Code.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>The_Coupon_Code.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Tests\Validate_Credit_Card_Number.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Validate_Credit_Card_Number.feature.cs</LastGenOutput>
     </None>
     <None Include="Tests\Write_Number_in_Expanded_Form.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

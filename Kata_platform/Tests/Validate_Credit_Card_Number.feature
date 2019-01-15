@@ -50,3 +50,8 @@ Scenario: 04_Invalid_separators
 	Given I have entered "4344 8511 6051 1970" into the kata "Validate_Credit_Card_Number"
 	When I execute selected kata solution
 	Then the result should be "false" on the screen
+
+Scenario: 05_Invalid_not_16_with_separators
+	Given I have entered "4344 8511 601 1970" into the kata "Validate_Credit_Card_Number"
+	When I execute selected kata solution
+	Then the result should be "false" on the screen

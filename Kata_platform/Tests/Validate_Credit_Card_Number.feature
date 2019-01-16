@@ -37,7 +37,7 @@ Scenario: 01_Valid
 	Then the result should be "true" on the screen
 
 Scenario: 02_Valid_with_separators
-	Given I have entered "4344 8511 6052 1970" into the kata "Validate_Credit_Card_Number"
+	Given I have entered "0768 2757 5685 6340" into the kata "Validate_Credit_Card_Number"
 	When I execute selected kata solution
 	Then the result should be "true" on the screen
 

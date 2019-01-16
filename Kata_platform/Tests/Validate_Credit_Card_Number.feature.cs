@@ -88,7 +88,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 39
 this.ScenarioSetup(scenarioInfo);
 #line 40
- testRunner.Given("I have entered \"4344 8511 6052 1970\" into the kata \"Validate_Credit_Card_Number\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I have entered \"0768 2757 5685 6340\" into the kata \"Validate_Credit_Card_Number\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 41
  testRunner.When("I execute selected kata solution", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 42

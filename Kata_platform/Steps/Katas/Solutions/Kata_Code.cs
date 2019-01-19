@@ -15,9 +15,54 @@ namespace Kata_platform.Steps.Katas.Solutions
         #region Validate_Credit_Card_Number
         public string Validate_Credit_Card_Number(string Card_Number)
         {
+            List<string> symbols_to_remove = new List<string> { " " };
+
+            foreach (string value in symbols_to_remove)
+                {
+                Card_Number = Card_Number.Replace(value, "");
+                }
+
+            //if (Card_Number.Count() != 16)
+            //    {
+            //        return "false";
+            //    }
+
             string result;
-            result = "0";
+
+            result = String.Join("", Card_Number
+                .Reverse()
+                .Select((x, i) =>
+                    i % 2 != 0  ?
+                    Convert.ToString(   
+                    int.Parse(x.ToString()) * 2 >= 10 ? 
+                    int.Parse(x.ToString()) * 2 - 9 : 
+                    int.Parse(x.ToString()) * 2)
+                : x.ToString()));
+
+            result = String.Join("", 
+                                Card_Number.Select(i => (int)char.GetNumericValue(i))
+                                .Reverse()
+                                .Select(
+                                    (x, i) =>
+                                    i % 2 != 0 ?
+                                            (
+                                            x * 2 >= 10 ?
+                                            x * 2 - 9 :
+                                            x * 2
+                                            )
+                                    : x)
+                                );
+
             Log.Info("result = " + result);
+            
+            result = result.ToList().Sum(s => int.Parse(s.ToString())).ToString();
+
+            Log.Info("result = " + result);
+
+            result = Convert.ToString((int.Parse(result) % 10 == 0)).ToLower();
+
+            Log.Info("result = " + result);
+
             return result;
         }
         #endregion
